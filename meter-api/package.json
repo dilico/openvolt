@@ -1,0 +1,30 @@
+{
+  "name": "meter-api",
+  "version": "0.0.1",
+  "description": "API that provides information about a building's energy consumption",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint '**/*.js'",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
+    "dev": "nodemon --env-file=.development.env src/server.js"
+  },
+  "author": "Diego Colantoni",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "transform": {}
+  }
+}
